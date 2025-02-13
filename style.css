@@ -1,38 +1,96 @@
-
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 120px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin: 0;
 }
 
-
-.contact {
-
-    
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin-top: 120px;
-}
-
-button {
-    position: absolute;
-    width: 30%;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.about_me {
-    top:80px;
-    position: relative;
-   
+.name {
+    position: absolute; 
+    top: 20px;
+    left:20px; 
+    font-size: 24px;
+    font-weight: bold;
 
 }
 
 .headline {
-    position: absolute;
-    top: 40px;
-    left:10px;
-    
+    font-size: 28px;
+    margin-top:250px;
+    text-align: center;
+}
+
+.contact_links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px; /* Adds space below the headline */
+        align-items: flex-start; /* Ensures both contact and links are aligned to the top */
+    }
+
+.about_me {
+    font-size: 16px;
+    width: 60%;
+    text-align: left;
+    margin-left:20px;
+    align-self:flex-start;
+}
+
+
+.contact {
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 250px;
+    text-align: left;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the email input */
+.contact input {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Make the message field larger */
+.contact textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    box-sizing: border-box;
+    resize: vertical; /* Allows user to resize */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the button */
+.contact button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background: darkblue;
+}
+
+
+.links {
+    text-align: right; 
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column; /* Align links vertically */
+    align-self: flex-start; /* Align to the top */
 }
