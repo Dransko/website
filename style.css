@@ -1,0 +1,38 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 120px;
+
+}
+
+
+.contact {
+
+    
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+button {
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about_me {
+    top:80px;
+    position: relative;
+   
+
+}
+
+.headline {
+    position: absolute;
+    top: 40px;
+    left:10px;
+    
+}
