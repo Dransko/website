@@ -1,9 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
-        document.getElementById("loading_screen").style.display = "none";
-    }, 1000);
-});
-
 function saveInput() {
     let email = document.getElementById("contact_email").value;
     let message = document.getElementById("contact_message").value;
@@ -20,7 +14,7 @@ function saveInput() {
     }
 
     // API Gateway URL
-    const apiUrl = "https://8lg1w0hyd1.execute-api.us-east-1.amazonaws.com/prod";  // Replace with your actual API Gateway endpoint
+    const apiUrl = "https://s94u30tp93.execute-api.us-east-1.amazonaws.com/prod";  
 
     // Data to send
     const data = {
