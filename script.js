@@ -13,6 +13,12 @@ function saveInput() {
         return;
     }
 
+    // Simple email validation
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert("Please enter a valid email address");
+        return;
+    }
+
     // API Gateway URL
     const apiUrl = "https://8lg1w0hyd1.execute-api.us-east-1.amazonaws.com/prod";  // Replace with your actual API Gateway endpoint
 
@@ -30,7 +36,12 @@ function saveInput() {
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
     .then(result => {
         console.log("Success:", result);
         alert("Message saved successfully!");
