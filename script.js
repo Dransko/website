@@ -1,7 +1,7 @@
 function saveInput() {
     let email = document.getElementById("contact_email").value;
     let message = document.getElementById("contact_message").value;
-
+/*
     if (email.trim() === "" || message.trim() === "") {
         alert("Please enter an email and a message");
         return;
@@ -12,6 +12,7 @@ function saveInput() {
         alert("Please enter a valid email address");
         return;
     }
+    */
 
     // API Gateway URL
     const apiUrl = "https://wcdwsdlz6g.execute-api.us-east-1.amazonaws.com/dev";  
