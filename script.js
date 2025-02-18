@@ -14,7 +14,7 @@ function saveInput() {
     }
 
     // API Gateway URL
-    const apiUrl = "https://s94u30tp93.execute-api.us-east-1.amazonaws.com/prod";  
+    const apiUrl = "https://wcdwsdlz6g.execute-api.us-east-1.amazonaws.com/dev";  
 
     // Data to send
     const data = {
